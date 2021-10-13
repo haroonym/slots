@@ -1,6 +1,5 @@
 <template>
     <button class="slot-style"><slot /></button>
-    <!-- Haroon -->
 </template>
 
 <script>
