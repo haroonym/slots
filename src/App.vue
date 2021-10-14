@@ -1,5 +1,6 @@
 <template>
-  <div style="display:flex">
+  <!-- Aufgabe 1 -->
+  <!-- <div style="display:flex">
     <Sheet bg-color="#3498db" color="white" width="250" height="300">
       <h3>Memo to myself</h3>
       <p>Always prepare for PLFs in time!</p>
@@ -11,8 +12,10 @@
       <p>Wish is was there!</p>
       <span style="font-style: italic">E. Wahn</span>
     </Sheet>
-  </div>
-  <!-- <div id="app">
+  </div> -->
+
+<!-- Aufgabe 2 -->
+  <div id="app">
     <AppLayout>
       <template v-slot:header>
         I was made with Vue slots!
@@ -22,20 +25,26 @@
         By Robert Baumgartner
       </template>
     </AppLayout>
-  </div> -->
+  </div>
+
+  <!-- 
+  Antwort auf 2: spielt keine Rolle, da man bei dem slot angibt, 
+  ob es ein Footer oder ein Header ist 
+  -->
+  
 </template>
 
 <script>
-// import AppButton from '@/components/AppButton.vue';
-import Sheet from '@/components/Sheet.vue';
-// import AppLayout from '@/components/AppLayout.vue';
+import AppButton from '@/components/AppButton.vue';
+// import Sheet from '@/components/Sheet.vue';
+import AppLayout from '@/components/AppLayout.vue';
 export default {
   name: 'App',
 
   components: {
-    // AppButton,
-    Sheet,
-    // AppLayout,
+    AppButton,
+    // Sheet,
+    AppLayout,
   },
 
   data: () => ({
@@ -43,3 +52,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+#app {
+  text-align: center;
+}
+</style>
