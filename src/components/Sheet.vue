@@ -1,9 +1,29 @@
 <template>
-    <button class="slot-style"><slot /></button>
+  <button class="slot-style" :style="slotStyle()"><slot /></button>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    bgColor: {
+      type: String,
+    },
+    color: {
+      type: String,
+    },
+    width: {
+      type: String,
+    },
+    height: {
+      type: String,
+    },
+  },
+  methods: {
+    slotStyle() {
+      return `background-color:${this.bgColor}; color:${this.color}; width:${this.width}; height:${this.height}; margin-left:15px;`;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

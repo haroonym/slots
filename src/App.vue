@@ -12,17 +12,30 @@
       <span style="font-style: italic">E. Wahn</span>
     </Sheet>
   </div>
+  <!-- <div id="app">
+    <AppLayout>
+      <template v-slot:header>
+        I was made with Vue slots!
+      </template>
+      <AppButton><img src="home.svg" /> Home</AppButton>
+      <template v-slot:footer>
+        By Robert Baumgartner
+      </template>
+    </AppLayout>
+  </div> -->
 </template>
 
 <script>
 // import AppButton from '@/components/AppButton.vue';
 import Sheet from '@/components/Sheet.vue';
+// import AppLayout from '@/components/AppLayout.vue';
 export default {
   name: 'App',
 
   components: {
     // AppButton,
     Sheet,
+    // AppLayout,
   },
 
   data: () => ({
